@@ -1,3 +1,8 @@
 @import'./base.css';
 p{font-weight: 600;
     margin-top: 01px;}
+
+ .row{
+    margin-left: 0;
+    margin-right: 0;
+    }
