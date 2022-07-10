@@ -1,8 +1,10 @@
 @import'./base.css';
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
 p{font-weight: 600;
     margin-top: 01px;}
 
 .gallery-items
 {
     margin-bottom: 30px;
+    font-family: 'Gulzar', serif;
 }
