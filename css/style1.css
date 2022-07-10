@@ -95,10 +95,12 @@ body{
     padding: 0 2vw;
 }
 .gallery-items {
-    margin-bottom: 90px;
+   margin-block: 30px;
+
 }
 .gallery-items{
-    
+    margin-block: 30px;
+
     width: 340px;
     height: 340px;
     
