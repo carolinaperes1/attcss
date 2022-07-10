@@ -1,4 +1,3 @@
-
 <!doctype html><html lang="pt-br">
 <head> 
 <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,32 +6,44 @@
 <title>YOURSHADES</title>
 </head>
 <header>
-<nav class="container">
-    <div class="logo">
-    </div>
-    <div class="1">
-    <a href="https://carolinaperes1.github.io/attcss/sobrenos.html" class="navLinks">Sobre Nós</a>
-    </div>
-    <div class="2">
-    <a href="https://carolinaperes1.github.io/attcss/tamanhos.html" class="navLinks">Tamanhos</a>
-    </div>
-    <div class="3">
-    <a href="https://carolinaperes1.github.io/attcss/feminino.html" class="navLinks">Feminino</a>
-    </div>
-    <div class="4">
-    <a href="https://carolinaperes1.github.io/attcss/masculino.html" class="navLinks">Masculino</a>
-    </div>
-    <div class="5">
-    <a href="https://carolinaperes1.github.io/attcss/infantil.html" class="navLinks">Infantil</a>
-    </div>
-    <div class="6">
-    <a href="#" class="navLinks">Nova Página</a>
-    </div>
-        <div class="6">
-            <a href="https://carolinaperes1.github.io/attcss/cadastro.html" class="navLinks">Cadastro</a>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+            <a href="https://carolinaperes1.github.io/attcss/feminino.html" class="w3-bar-item w3-button">Feminino</a>
+          <a href="https://carolinaperes1.github.io/attcss/masculino.html" class="w3-bar-item w3-button">Masculino</a>
+          <a href="https://carolinaperes1.github.io/attcss/infantil.html" class="w3-bar-item w3-button">Infantil</a>
+          <a href="https://carolinaperes1.github.io/attcss/sobrenos.html" class="w3-bar-item w3-button">Sobre nós</a>
+          <a href="https://carolinaperes1.github.io/attcss/cadastro.html" class="w3-bar-item w3-button">Cadastre-se</a>
+          <a href="https://carolinaperes1.github.io/attcss/novapagina.html" class="w3-bar-item w3-button">Nova página</a>
+          <a href="https://carolinaperes1.github.io/attcss/tamanho.html" class="w3-bar-item w3-button">Tabela de Tamanhos</a>
         </div>
+    
+        <style>.w3-teal, .w3-hover-teal:hover {
+            color: #fff!important;
+            background-color: rgb(215, 160, 222)!important;
+        }
+        </style>
+        <div class="w3-teal w3-purple">
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+           
+          </div>
+    
     </div>
-  </nav>
+    
+    <script>
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+        </script>
+             
 </header>
 <body>
     <main>
