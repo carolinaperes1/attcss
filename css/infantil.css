@@ -5,4 +5,12 @@ p{font-weight: 600;
 .gallery-items
 {margin-block: 30px;
 }
-
+footer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    align-items: center;
+    text-align: center;
+    background: rgb(152, 100, 143);
+  }
