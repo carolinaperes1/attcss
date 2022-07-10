@@ -95,6 +95,7 @@ body{
     padding: 0 2vw;
 }
 .gallery-items{
+    margin-bottom: 90px;
     width: 340px;
     height: 340px;
     
