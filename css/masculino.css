@@ -2,6 +2,10 @@
 p{font-weight: 600;
     margin-top: 01px;}
 
-.gallery-items
+.gallery-item
 {margin-block: 30px;
+}
+
+img {
+    border-style: ridge;
 }
