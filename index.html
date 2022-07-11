@@ -1,55 +1,45 @@
-<!doctype html><html lang="pt-br">
-<head> 
-<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/style1.css"> 
-<link rel="stylesheet" href="css/masculino.css">
-<title>YOURSHADES</title>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Yourshades</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/style1.css">
 </head>
-<header>
-<nav class="container">
-    <div class="logo">
-    </div>
-    <div class="1">
-    <a href="https://carolinaperes1.github.io/attcss/sobrenos.html" class="navLinks">Sobre Nós</a>
-    </div>
-    <div class="2">
-    <a href="https://carolinaperes1.github.io/attcss/tamanhos.html" class="navLinks">Tamanhos</a>
-    </div>
-    <div class="3">
-    <a href="https://carolinaperes1.github.io/attcss/feminino.html" class="navLinks">Feminino</a>
-    </div>
-    <div class="4">
-    <a href="https://carolinaperes1.github.io/attcss/masculino.html" class="navLinks">Masculino</a>
-    </div>
-    <div class="5">
-    <a href="https://carolinaperes1.github.io/attcss/infantil.html" class="navLinks">Infantil</a>
-    </div>
-    <div class="6">
-    <a href="#" class="navLinks">Nova Página</a>
-    </div>
-        <div class="6">
-            <a href="https://carolinaperes1.github.io/attcss/cadastro.html" class="navLinks">Cadastro</a>
-        </div>
-    </div>
-  </nav>
-</header>
- <style>
-   
-        footer {
-          text-align: center;
-          padding: 3px;
-          background-color: rgb(235, 196, 242);
-          color: white;
-          display: block;
-        }
-        </style>
-        <footer>
-          <p>© 2022 - YOURSHADES</p>
-          <p>NOS SIGA NAS REDES:</p>
-          <p>Instagram: @yourshadestons</p>
-          <p>Twitter: @yourshades</p>
-          <p>Spotify: yourshadestons</p>
-          <p>SAC: yourshadestons@hotmail.com</p>
-        </footer>
+<body>
+
+<!-- Menu de Navegação -->
+<nav>
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Fechar &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Feminino</a>
+  <a href="#" class="w3-bar-item w3-button">Masculino</a>
+  <a href="#" class="w3-bar-item w3-button">Infantil</a>
+  <a href="#" class="w3-bar-item w3-button">Sobre nós</a>
+  <a href="#" class="w3-bar-item w3-button">Nova página</a>
+  <a href="#" class="w3-bar-item w3-button">Tabela de tamanhos</a>
+  <a href="#" class="w3-bar-item w3-button">Cadastre-se</a>
+</div>
+
+<!-- Logo -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container w3-rgb(210, 153, 210)">
+    <h1><img src="img/ys.jpg" alt="logo" width="200px" height="100px"></h1>
+  </div>
+</div>
+</nav>
+
+<!---Funcionamento do menu-->
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+     
 </body>
-    </html>
+</html> 
