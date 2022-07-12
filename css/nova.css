@@ -42,7 +42,7 @@ import /@base.css
                     width: 1000px;
                     height: 363px;
                     background-size: cover;
-                    position: center;
+                    position: static;
                     left: 950px;
                     top: 475px;
                 
