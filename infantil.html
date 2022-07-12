@@ -10,27 +10,31 @@
 <link rel="stylesheet" href="css/infantil.css">
 </head>
 <body>
-
 <!-- Menu de Navegação -->
-<nav>
-<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-  <button onclick="w3_close()" class="w3-bar-item w3-large">Fechar &times;</button>
-  <a href="#" class="w3-bar-item w3-button">Feminino</a>
-  <a href="#" class="w3-bar-item w3-button">Masculino</a>
-  <a href="#" class="w3-bar-item w3-button">Infantil</a>
-  <a href="#" class="w3-bar-item w3-button">Sobre nós</a>
-  <a href="#" class="w3-bar-item w3-button">Nova página</a>
-  <a href="#" class="w3-bar-item w3-button">Tabela de tamanhos</a>
-  <a href="#" class="w3-bar-item w3-button">Cadastre-se</a>
-</div>
+  <nav>
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Fechar &times;</button>
+        <a href="https://carolinaperes1.github.io/attcss/feminino.html" class="w3-bar-item w3-button">Feminino</a>
+        <a href="https://carolinaperes1.github.io/attcss/masculino.html" class="w3-bar-item w3-button">Masculino</a>
+        <a href="https://carolinaperes1.github.io/attcss/infantil.html" class="w3-bar-item w3-button">Infantil</a>
+        <a href="https://carolinaperes1.github.io/attcss/sobrenos.html" class="w3-bar-item w3-button">Sobre nós</a>
+        <a href="https://carolinaperes1.github.io/attcss/novapagina.html" class="w3-bar-item w3-button">Nova
+            página</a>
+        <a href="https://carolinaperes1.github.io/attcss/tamanhos.html" class="w3-bar-item w3-button">Tabela de
+            tamanhos</a>
+        <a href="https://carolinaperes1.github.io/attcss/cadastro.html"
+            class="w3-bar-item w3-button">Cadastre-se</a>
+    </div>
 
-<!-- Logo -->
-<div class="w3-teal">
-  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
-  <div class="w3-container w3-rgb(210, 153, 210)">
-    <h1><img src="img/ys.jpg" alt="logo" width="200px" height="100px"></h1>
-  </div>
-</div>
+    <!-- Logo -->
+    <div class="w3-teal">
+        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        <div class="w3-container w3-rgb(210, 153, 210)">
+            <h1><a href="https://carolinaperes1.github.io/attcss/"><img src="img/ys.jpg" alt="logo" width="150px"
+                        height="auto"></a></h1>
+        </div>
+    </div>
+   
 </nav>
 
 <!---Funcionamento do menu-->
@@ -44,56 +48,23 @@ function w3_close() {
 }
 </script>
      <!--Conteúdo do site-->
-        <main>
-           <!---Banners-->
-<div class="w3-content">
-  <img class="mySlides" src="img/bannerinf1.png"> 
-  <img class="mySlides" src="img/bannerinf2.png">
-  <img class="mySlides" src="img/bannerinf3.png">
-</div>
-
-<div class="w3-center">
-  <div class="w3-section">
-    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Voltar</button>
-    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Próximo ❯</button>
-  </div>
-  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
-  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
-  <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
-</div>
-<!---Funcionamento dos Banners-->
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-red", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-red";
-}
-</script>
+      <main>
+            <!---Banners-->
+            <header>
+              <div class="w3-col s12" id="banner">
+                  <img src="img/bannerinf3.png" alt="Banner" width="100%">
+              </div>
+                  </header>
+                  <main>
+              <div id="anime">
+                  <p></p>
+              </div>
+                  </main>
         <br/>
-     <button class="button button1">Principal</button>
-    <button class="button button2">Categoria</button>
-    <button class="button button3">Infantil</button>
+      <br/>
+  <button class="button button1">Principal</button>
+  <button class="button button2">Categoria</button>
+  <button class="button button3">Infantil</button>
     <div class="gallery-container">
     <a class="gallery-item">
     <img src="img/vestidoflores.png" alt="vestido"  style="
@@ -171,27 +142,30 @@ function showDivs(n) {
                     </a>
   </div>  
   </main>
-            <!---Rodapé-->
-            <footer class="mt-5 p-4 bg-dark text-white text-left text-muted">
-            <div class="container">
-            <div class="row py-2">
-            <div class="col-12 col-md-4 text-md-left">
-            &copy; 2022 - YOURSHADES 
-            </div>
-            <div class="col-12 col-md-4 text-md-left">
-            <ul>
-           <li>NOS SIGA NAS REDES:</li>
-           <li>Instagram:<a href="https://www.instagram.com/yourshadestons/"> @yourshadestons</a></li>
-           <li>Twitter:<a href="https://twitter.com/Yourshades1"> @yourshades</a></li>
-           <li>Spotify: yourshadestons</li>
-          </ul>
-          </div>
-        <div class="col-12 col-md-4 text-md-left">
-         SAC: yourshadestons@hotmail.com
-        </div>
-        </div>
-        </div>
-      </footer>
-    </body>
-        </html>
-    
+    <!---Rodapé-->
+           <footer class="w3-padding-64 w3-small w3-center w3-opacity" id="footer">
+            <div class="w3-row-padding">
+                <div class="w3-col s4">
+                    <h4>Sobre</h4>
+                    <p>CONTATOS:</p>
+                    <p>SAC: yourshadestons@hotmail.com</p>
+                    <p><i class="fa fa-fw fa-phone"></i> 0800 728 1122</p>  
+                </div>
+        
+                <div class="w3-col s4"> 
+                     <p>&copy; 2022 - YOURSHADES</p>               
+                </div>
+        
+                <div class="w3-col s4 w3-justify">
+                    <h4>Nossas Redes</h4>
+                    <p><i class="fa fa-instagram w3-hover-opacity w3-large"></i>Instagram:<a
+                            href="https://www.instagram.com/yourshadestons/"> @yourshadestons</a></p>
+                    <p><i class="fa fa-twitter w3-hover-opacity w3-large"></i>Twitter:<a href="https://twitter.com/Yourshades1">
+                            @yourshades1</a></p>
+                    <p><i class="fa fa-spotify w3-hover-opacity w3-large"></i>Spotify:yourshadestons</p>
+                </div>
+              </div>
+              </footer>
+  </body>
+      
+  </html>
