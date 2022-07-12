@@ -9,3 +9,10 @@ p{font-weight: 600;
 img {
     border-style: ridge;
 }
+.mySlides {display:none;
+   width:100%
+   }
+
+.w3-content{
+    max width: 800px;
+}
