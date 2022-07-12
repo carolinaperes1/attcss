@@ -1,210 +1,184 @@
 <html><head>
-    <title>Yourshades</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="css/feminino.css">
-    </head>
-    <body>
-    
-    <!-- Menu de Navegação -->
-    <nav>
+  <title>Yourshades</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/feminino.css">
+  </head>
+  <body>
+  
+  <!-- Menu de Navegação -->
+  <!-- Menu de Navegação -->
+  <nav>
     <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-      <button onclick="w3_close()" class="w3-bar-item w3-large">Fechar ×</button>
-      <a href="https://carolinaperes1.github.io/attcss/feminino.html" class="w3-bar-item w3-button">Feminino</a>
-      <a href="https://carolinaperes1.github.io/attcss/masculino.html" class="w3-bar-item w3-button">Masculino</a>
-      <a href="https://carolinaperes1.github.io/attcss/infantil.html" class="w3-bar-item w3-button">Infantil</a>
-      <a href="https://carolinaperes1.github.io/attcss/sobrenos.html" class="w3-bar-item w3-button">Sobre nós</a>
-      <a href="https://carolinaperes1.github.io/attcss/novapagina.html" class="w3-bar-item w3-button">Nova página</a>
-      <a href="https://carolinaperes1.github.io/attcss/tamanhos.html" class="w3-bar-item w3-button">Tabela de tamanhos</a>
-      <a href="https://carolinaperes1.github.io/attcss/cadastro.html" class="w3-bar-item w3-button">Cadastre-se</a>
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Fechar &times;</button>
+        <a href="https://carolinaperes1.github.io/attcss/feminino.html" class="w3-bar-item w3-button">Feminino</a>
+        <a href="https://carolinaperes1.github.io/attcss/masculino.html" class="w3-bar-item w3-button">Masculino</a>
+        <a href="https://carolinaperes1.github.io/attcss/infantil.html" class="w3-bar-item w3-button">Infantil</a>
+        <a href="https://carolinaperes1.github.io/attcss/sobrenos.html" class="w3-bar-item w3-button">Sobre nós</a>
+        <a href="https://carolinaperes1.github.io/attcss/novapagina.html" class="w3-bar-item w3-button">Nova
+            página</a>
+        <a href="https://carolinaperes1.github.io/attcss/tamanhos.html" class="w3-bar-item w3-button">Tabela de
+            tamanhos</a>
+        <a href="https://carolinaperes1.github.io/attcss/cadastro.html"
+            class="w3-bar-item w3-button">Cadastre-se</a>
     </div>
-    
+
     <!-- Logo -->
     <div class="w3-teal">
-      <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
-      <div class="w3-container w3-rgb(210, 153, 210)">
-        <h1><img src="img/ys.jpg" alt="logo" width="200px" height="100px"></h1>
-      </div>
+        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        <div class="w3-container w3-rgb(210, 153, 210)">
+            <h1><a href="https://carolinaperes1.github.io/attcss/"><img src="img/ys.jpg" alt="logo" width="150px"
+                        height="auto"></a></h1>
+        </div>
     </div>
-    </nav>
-    
-    <!---Funcionamento do menu-->
-    <script>
-    function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-    }
-    
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-    }
-    </script>
-     <!--Conteúdo do site-->
-        <main>
-              <!---Banners-->
-<div class="w3-content">
-  <img class="mySlides" src="img/bannerfem.png"> 
-  <img class="mySlides" src="img/bannerprim2.png">
-  <img class="mySlides" src="img/bannerrosa.gif">
-</div>
-
-<div class="w3-center">
-  <div class="w3-section">
-    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Voltar</button>
-    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Próximo ❯</button>
-  </div>
-  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
-  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
-  <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
-</div>
-<!---Funcionamento dos Banners-->
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+   
+</nav>
+  <!---Funcionamento do menu-->
+  <script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-red", "");
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
   }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-red";
-}
-</script>
-  
-        <br/>
-    <button class="button button1">Principal</button>
-    <button class="button button2">Categoria</button>
-    <button class="button button3">Feminino</button>
-          
-            <div class="gallery-container">
-                <a class="gallery-item">
-                    <img src="img/bicolor.png" alt="bicolor" style="
-        width: 300px;
-    ">
-                    <p class="text-center">Blusa Bicolor</p>
-                    <p class="text-center">49,99</p>
-                </a>
-                <a class="gallery-item">
-                    <img src="img/blusa.png" alt="blusa" style="
-        width: 300px;
-    ">
-                    <p class="text-center">Blusinha</p>
-                    <p class="text-center">R$65,00</p>
-                </a>
-                <a class="gallery-item">
-                    <img src="img/body.png" alt="body" style="
-        height: 300px;
-    ">
-                    <p class="text-center">Body</p>
-                    <p class="text-center">R$49,99</p>
-                </a>
-                <a class="gallery-item">
-                    <img src="img/calca.png" alt="calca" style="
-    height: 300px;
-">
-                    <p class="text-center">Calça jeans</p>
-                    <p class="text-center">R$119,99</p>
-                </a>
-                <a class="gallery-item">
-                    <img src="img/goth.png" alt="goth" style="
-    width: 300px;
-">
-                    <p class="text-center">Cropped goth</p>
-                    <p class="text-center">R$49,99</p>
-                </a>
-                <a class="gallery-item">
-                    <img src="img/conjuntoesportivo.png" alt="conjuntoesportivo" style="
-    width: 300px;
-">
-                    <p class="text-center">Conjunto esportivo</p>
-                    <p class="text-center">R$89,99</p>
-                </a>
-                <a class="gallery-item">
-                    <img src="img/molusa.png" alt="moletom" style="
-    width: 300px;
-">
-                    <p class="text-center">Moletom U.S.A</p>
-                    <p class="text-center">R$79,99</p>
-                </a>
-                <a class="gallery-item">
-                    <img src="img/moletomfeminino.png" alt="moletom" style="
-    width: 300px;
-">
-                    <p class="text-center">Moletom</p>
-                    <p class="text-center">R$79,99</p>
-                </a>
-                <a class="gallery-item">
-                    <img src="img/saia.png" alt="Saia" style="
-    width: 300px;
-">
-                    <p class="text-center">Saia</p>
-                    <p class="text-center">R$119,99</p>
-                </a>
-                <a class="gallery-item">
-                    <img src="img/vestido.png" alt="Vestido" style="
-    width: 300px;
-">
-                    <p class="text-center">Vestido</p>
-                    <p class="text-center">R$100,00</p>
-                </a>
-                <a class="gallery-item">
-                    <img src="img/shortdeolane.png" alt="short" style="
-    width: 300px;
-">
-                    <p class="text-center">Short Deolane</p>
-                    <p class="text-center">R$59,99</p>
-                </a>
-                <a class="gallery-item">
-                    <img src="img/romwe.png" alt="romwe" style="
-    width: 300px;
-">
-                    <p class="text-center">Conjuntinho</p>
-                    <p class="text-center">R$140,00</p>
-                </a>
-               
-        
-             
-                
-            </div>        
-        </main>
-  
-             <!---Rodapé-->
-                <footer class="mt-5 p-4 bg-dark text-white text-left text-muted">
-                <div class="container">
-                <div class="row py-2">
-                <div class="col-12 col-md-4 text-md-left">
-                © 2022 - YOURSHADES 
-                </div>
-                <div class="col-12 col-md-4 text-md-left">
-                <ul>
-               <li>NOS SIGA NAS REDES:</li>
-               <li>Instagram:<a href="https://www.instagram.com/yourshadestons/"> @yourshadestons</a></li>
-               <li>Twitter:<a href="https://twitter.com/Yourshades1"> @yourshades</a></li>
-               <li>Spotify: yourshadestons</li>
-              </ul>
+  </script>
+   <!--Conteúdo do site-->
+      <main>
+            <!---Banners-->
+            <header>
+              <div class="w3-col s12" id="banner">
+                  <img src="img/banneramaior.png" alt="Banner" width="100%">
               </div>
-            <div class="col-12 col-md-4 text-md-left">
-             SAC: yourshadestons@hotmail.com
-            </div>
-            </div>
-            </div>
-          </footer>
+                  </header>
+                  <main>
+              <div id="anime">
+                  <p></p>
+              </div>
+                  </main>
+
+      <br/>
+  <button class="button button1">Principal</button>
+  <button class="button button2">Categoria</button>
+  <button class="button button3">Feminino</button>
         
-        </body>
-    </html>
+          <div class="gallery-container">
+              <a class="gallery-item">
+                  <img src="img/bicolor.png" alt="bicolor" style="
+      width: 300px;
+  ">
+                  <p class="text-center">Blusa Bicolor</p>
+                  <p class="text-center">49,99</p>
+              </a>
+              <a class="gallery-item">
+                  <img src="img/blusa.png" alt="blusa" style="
+      width: 300px;
+  ">
+                  <p class="text-center">Blusinha</p>
+                  <p class="text-center">R$65,00</p>
+              </a>
+              <a class="gallery-item">
+                  <img src="img/body.png" alt="body" style="
+      height: 300px;
+  ">
+                  <p class="text-center">Body</p>
+                  <p class="text-center">R$49,99</p>
+              </a>
+              <a class="gallery-item">
+                  <img src="img/calca.png" alt="calca" style="
+  height: 300px;
+">
+                  <p class="text-center">Calça jeans</p>
+                  <p class="text-center">R$119,99</p>
+              </a>
+              <a class="gallery-item">
+                  <img src="img/goth.png" alt="goth" style="
+  width: 300px;
+">
+                  <p class="text-center">Cropped goth</p>
+                  <p class="text-center">R$49,99</p>
+              </a>
+              <a class="gallery-item">
+                  <img src="img/conjuntoesportivo.png" alt="conjuntoesportivo" style="
+  width: 300px;
+">
+                  <p class="text-center">Conjunto esportivo</p>
+                  <p class="text-center">R$89,99</p>
+              </a>
+              <a class="gallery-item">
+                  <img src="img/molusa.png" alt="moletom" style="
+  width: 300px;
+">
+                  <p class="text-center">Moletom U.S.A</p>
+                  <p class="text-center">R$79,99</p>
+              </a>
+              <a class="gallery-item">
+                  <img src="img/moletomfeminino.png" alt="moletom" style="
+  width: 300px;
+">
+                  <p class="text-center">Moletom</p>
+                  <p class="text-center">R$79,99</p>
+              </a>
+              <a class="gallery-item">
+                  <img src="img/saia.png" alt="Saia" style="
+  width: 300px;
+">
+                  <p class="text-center">Saia</p>
+                  <p class="text-center">R$119,99</p>
+              </a>
+              <a class="gallery-item">
+                  <img src="img/vestido.png" alt="Vestido" style="
+  width: 300px;
+">
+                  <p class="text-center">Vestido</p>
+                  <p class="text-center">R$100,00</p>
+              </a>
+              <a class="gallery-item">
+                  <img src="img/shortdeolane.png" alt="short" style="
+  width: 300px;
+">
+                  <p class="text-center">Short Deolane</p>
+                  <p class="text-center">R$59,99</p>
+              </a>
+              <a class="gallery-item">
+                  <img src="img/romwe.png" alt="romwe" style="
+  width: 300px;
+">
+                  <p class="text-center">Conjuntinho</p>
+                  <p class="text-center">R$140,00</p>
+              </a>
+             
+      
+           
+              
+          </div>        
+      </main>
+
+           <!---Rodapé-->
+           <footer class="w3-padding-64 w3-small w3-center w3-opacity" id="footer">
+            <div class="w3-row-padding">
+                <div class="w3-col s4">
+                    <h4>Sobre</h4>
+                    <p>CONTATOS:</p>
+                    <p>SAC: yourshadestons@hotmail.com</p>
+                    <p><i class="fa fa-fw fa-phone"></i> 0800 728 1122</p>  
+                </div>
+        
+                <div class="w3-col s4"> 
+                     <p>&copy; 2022 - YOURSHADES</p>               
+                </div>
+        
+                <div class="w3-col s4 w3-justify">
+                    <h4>Nossas Redes</h4>
+                    <p><i class="fa fa-instagram w3-hover-opacity w3-large"></i>Instagram:<a
+                            href="https://www.instagram.com/yourshadestons/"> @yourshadestons</a></p>
+                    <p><i class="fa fa-twitter w3-hover-opacity w3-large"></i>Twitter:<a href="https://twitter.com/Yourshades1">
+                            @yourshades1</a></p>
+                    <p><i class="fa fa-spotify w3-hover-opacity w3-large"></i>Spotify:yourshadestons</p>
+                </div>
+              </div>
+              </footer>
+  </body>
+      
+  </html>
