@@ -13,3 +13,35 @@
   transition: 0.3s;
   width: 40%;
 }
+
+.sn{
+  text-align: center;
+  font-family: 'Ms Madi';
+  font-size: 55px;
+}
+.text{
+  font-family:'Raleway', sans-serif; 
+}
+.filial{
+    text-align: center;
+    height: 150px;
+    width: 510px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 20px;
+    border: 2px dashed black;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: baseline;
+    flex-direction: column;
+}
+ul.a {
+    list-style-type: square;
+  }
+  ul.b {
+    list-style-type:circle;
+  }
