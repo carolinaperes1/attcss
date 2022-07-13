@@ -4,7 +4,9 @@
     background-color: rgb(210, 153, 210) !important;
     display: flex;
 }
-
+p{font-weight: 800;
+    font-family: 'Sawarabi Mincho', serif;
+    margin-top: 01px;}
 img {
     border-style: ridge;
 }
