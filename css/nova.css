@@ -2,6 +2,18 @@ import /@base.css
 * {
     box-sizing: border-box;
   }
+
+p{font-weight: 600;
+     font-family: 'Sawarabi Mincho', serif;
+    margin-top: 01px;}
+
+.gallery-item
+{margin-block: 30px;
+}
+
+img {
+    border-style: ridge;
+}
   
   video {
     width: 100%;
