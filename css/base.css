@@ -4,6 +4,7 @@
     background-color: rgb(210, 153, 210) !important;
     display: flex;
 }
+
 p{font-weight: 500;
     font-family: 'Arima', cursive;;
     margin-top: 01px;
@@ -20,7 +21,10 @@ img {
 @media screen and (max-width: 1000px) {}
 
 
-
+#logo{
+    width: 150px;
+    height: auto;
+}
 
 #twist {
     color: blue;
