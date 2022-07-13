@@ -18,7 +18,6 @@ img {
     max width: 800px;
 }
 .w3-container{
-    width:35px;
-    height:35px;
-    display:flex;
+    width:75px;
+    height:75px;
 }
