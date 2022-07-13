@@ -2,10 +2,10 @@ import /@base.css
 * {
     box-sizing: border-box;
   }
-
-p{font-weight: 600;
-     font-family: 'Sawarabi Mincho', serif;
+p{font-weight: 500;
+    font-family: 'Arima', cursive;
     margin-top: 01px;}
+
 
 .gallery-item
 {margin-block: 30px;
