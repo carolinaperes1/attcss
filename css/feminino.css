@@ -5,6 +5,7 @@ p{font-weight: 500;
 
 .gallery-item
 {margin-block: 30px;
+    width: 300px;
 }
 
 img {
