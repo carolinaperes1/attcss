@@ -12,7 +12,9 @@ p{font-weight: 500;
 }
 
 #geison{
-    width="560" height="315"
+    width:560;
+    height:315;
+    display:flex;
 }
 
 img {
