@@ -4,9 +4,12 @@
     background-color: rgb(210, 153, 210) !important;
     display: flex;
 }
+
 p{font-weight: 500;
     font-family: 'Arima', cursive;;
-    margin-top: 01px;}
+    margin-top: 01px;
+}
+
 img {
     border-style: ridge;
 }
