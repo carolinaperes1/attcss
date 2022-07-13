@@ -54,6 +54,7 @@ img {
 .animation{
     width: 1000px;
     height: 363px;
+    margin: auto;
     background-size: cover;
     position:static;
     left: 950px;
