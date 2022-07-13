@@ -127,3 +127,9 @@ img {
           -ms-transform: scale(0.9);
           transform: scale(0.9);
   }
+  .gallery-item:hover{
+      -webkit-transform: scale(2.0);
+          -ms-transform: scale(0.9);
+          transform: scale(0.9);
+    }
+  
