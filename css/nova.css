@@ -59,6 +59,7 @@ img {
     position:static;
     left: 950px;
     top: 475px;
+    display:flex;
 
 animation-name: woosh;
 animation-duration: 20s;
