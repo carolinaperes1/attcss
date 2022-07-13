@@ -5,6 +5,12 @@
 {margin-block: 30px;
 }
 
+p{
+    font-weight: 500;
+    font-family: 'Arima', cursive;;
+    margin-top: 01px;}
+
+
 img {
     border-style: ridge;
 }
