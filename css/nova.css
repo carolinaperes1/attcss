@@ -67,7 +67,7 @@ img {
     top: 475px;
     display:flex;
     width: 100%;
-  max-width: 900px;
+  max-width: 500px;
   height: auto;
 
 animation-name: woosh;
