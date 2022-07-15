@@ -70,8 +70,11 @@ body {
     margin-left: 100px;
     margin-top: 20px;
   }
-  img#deolane {
+  #deolane {
     margin: 20px;
     display: flex;
     margin-top: 70px;
+    width: 100%;
+  max-width: 400px;
+  height: auto;
 }
