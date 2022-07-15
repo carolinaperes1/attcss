@@ -58,7 +58,7 @@ img {
   }
   
 .animation{
-    width: 1000px;
+    
     height: 363px;
     margin: auto;
     background-size: cover;
@@ -66,6 +66,9 @@ img {
     left: 950px;
     top: 475px;
     display:flex;
+    width: 100%;
+  max-width: 900px;
+  height: auto;
 
 animation-name: woosh;
 animation-duration: 20s;
