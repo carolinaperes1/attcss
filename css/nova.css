@@ -11,11 +11,9 @@ p{font-weight: 500;
 {margin-block: 30px;
 }
 
-#geison{
-    width:560px;
-    height:315px;
-    display:flex;
-}
+ .video {
+  max-width: 100%;
+  height: auto;
 
 img {
     border-style: ridge;
