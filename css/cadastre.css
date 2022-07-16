@@ -8,7 +8,10 @@
  h6 {
      font-family: "Raleway", Arial, Helvetica, sans-serif
  }
-
+.w3-padding-64 {background-color: #d299d2
+}
+ 
+ 
  .myLink {
      display: none
  }
