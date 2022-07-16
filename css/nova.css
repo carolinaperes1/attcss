@@ -79,8 +79,8 @@ animation-fill-mode:initial;
 @keyframes woosh {
 0%   {background-image:url(../img/closetbarbie.png); left:950px; top:475px; width: 1000px; height: 363px;}
 20% {background-image: url(../img/closet2.png); left:950px; top:475px; width: 1000px; height: 363px;}   
-40%  {background-image:url(../img/barbie2.png); left:950px; top:475px; width: 1000px; height: 363px;}
-60%  {background-image:url(../img/closetbarbie.png); left:950px; top:475px; width: 1000px; height: 363px;}
-80%  {background-image:url(../img/closet2.png); left:950px; top:475px; width: 1000px; height: 363px;}
-100%  {background-image:url(../img/barbie2.png); left:950px; top:475px; width: 1000px; height: 363px;}
+40%  {background-image:url(../img/closetbarbie.png); left:950px; top:475px; width: 1000px; height: 363px;}
+60%  {background-image:url(../img/closet2.png); left:950px; top:475px; width: 1000px; height: 363px;}
+80%  {background-image:url(../img/closetbarbie.png); left:950px; top:475px; width: 1000px; height: 363px;}
+100%  {background-image:url(../img/closet2.png); left:950px; top:475px; width: 1000px; height: 363px;}
 }
