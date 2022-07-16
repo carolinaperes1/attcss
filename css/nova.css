@@ -55,32 +55,28 @@ img {
     .col-12 {width: 100%;}
   }
   
-.animation{
-    
-    height: 363px;
-    margin: auto;
-    background-size: cover;
-    position:static;
-    left: 950px;
-    top: 475px;
-    display:flex;
-    width: 100%;
-  max-width: 500px;
-  height: auto;
-
-animation-name: woosh;
-animation-duration: 20s;
-animation-delay:0s;
-animation-iteration-count: infinite;
-animation-direction:normal;
-animation-timing-function:ease-in-out;
-animation-fill-mode:initial;
-}
-@keyframes woosh {
-0%   {background-image:url(../img/closetbarbie.png); left:950px; top:475px; width: 1000px; height: 363px;}
-20% {background-image: url(../img/closet2.png); left:950px; top:475px; width: 1000px; height: 363px;}   
-40%  {background-image:url(../img/closetbarbie.png); left:950px; top:475px; width: 1000px; height: 363px;}
-60%  {background-image:url(../img/closet2.png); left:950px; top:475px; width: 1000px; height: 363px;}
-80%  {background-image:url(../img/closetbarbie.png); left:950px; top:475px; width: 1000px; height: 363px;}
-100%  {background-image:url(../img/closet2.png); left:950px; top:475px; width: 1000px; height: 363px;}
-}
+ .animation{
+                    width: 1000px;
+                    height: 363px;
+                    background-size: cover;
+                    position:static;
+                    left: 950px;
+                    top: 475px;
+                    display:flex;
+                
+                animation-name: woosh;
+                animation-duration: 20s;
+                animation-delay:0s;
+                animation-iteration-count: infinite;
+                animation-direction:normal;
+                animation-timing-function:ease-in-out;
+                animation-fill-mode:initial;
+            }
+            @keyframes woosh {
+                0%   {background-image:url(../closetbarbie.png); left:950px; top:475px; width: 1000px; height: 363px;}
+                20% {background-image: url(../closet2.png); left:950px; top:475px; width: 1000px; height: 363px;}   
+                40%  {background-image:url(../barbie2.png); left:950px; top:475px; width: 1000px; height: 363px;}
+                60%  {background-image:url(../closetbarbie.png); left:950px; top:475px; width: 1000px; height: 363px;}
+                80%  {background-image:url(../closet2.png); left:950px; top:475px; width: 1000px; height: 363px;}
+                100%  {background-image:url(../barbie2.png); left:950px; top:475px; width: 1000px; height: 363px;}
+            }
