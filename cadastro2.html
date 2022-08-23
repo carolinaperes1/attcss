@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>YOURSHADES</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/cadastre.css" />
+    </head>
+    <body>
+       <nav>
+            <div class="w3-sidebar w3-bar-block w3-border-right" style="display: none;" id="mySidebar">
+                <button onclick="w3_close()" class="w3-bar-item w3-large">Fechar &times;</button> <a href="https://carolinaperes1.github.io/attcss/feminino.html" class="w3-bar-item w3-button">Feminino</a>
+                <a href="https://carolinaperes1.github.io/attcss/masculino.html" class="w3-bar-item w3-button">Masculino</a> <a href="https://carolinaperes1.github.io/attcss/infantil.html" class="w3-bar-item w3-button">Infantil</a>
+                <a href="https://carolinaperes1.github.io/attcss/sobrenos.html" class="w3-bar-item w3-button">Sobre nós</a>
+                <a href="https://carolinaperes1.github.io/attcss/novapagina.html" class="w3-bar-item w3-button">Yourshades Dreamhouse</a>
+                <a href="https://carolinaperes1.github.io/attcss/tamanhos.html" class="w3-bar-item w3-button">Tabela de tamanhos</a>
+                <a href="https://carolinaperes1.github.io/attcss/cadastro.html" class="w3-bar-item w3-button">Cadastre-se</a>
+            </div>
+            <div class="w3-teal">
+                <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+                <div class="w3-container w3-rgb(210, 153, 210)">
+                    <a href="https://carolinaperes1.github.io/attcss/"><img src="img/ys.jpg" alt="logo" width="200" height="100" /></a>
+                </div>
+            </div>
+        </nav>
+        <script>
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+            }
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
+        <main>
+        <div>
+            <form action="/action_page.php">
+              <label for="fname" >Profissão</label>
+              <input type="text" id="fname" name="Nome" placeholder="Sua profissão..">
+          
+              <label for="lname">Estado (onde trabalha)</label>
+              <input type="text" id="lname" name="lastname" placeholder="Onde trabalha..">
+          
+              <label for="lname">Anos de experiência</label>
+              <input type="text" id="lname" name="lastname" placeholder="Seus anos de experiência no mercado de trabalho..">
+        
+            
+              <input type="submit" value="Enviar">
+            </form>
+          </div>
+            
+        </main>
+        <footer class="w3-padding-64 w3-small w3-center w3-opacity" id="footer">
+            <div class="w3-row-padding">
+                <div class="w3-col s4">
+                    <h4>Sobre</h4>
+                    <p>CONTATOS:</p>
+                    <p>SAC: yourshadestons@hotmail.com</p>
+                    <p><i class="fa fa-fw fa-phone"></i> 0800 728 1122</p>
+                </div>
+                <div class="w3-col s4"><p>&copy; 2022 - YOURSHADES</p></div>
+                <div class="w3-col s4 w3-justify">
+                    <h4>Nossas Redes</h4>
+                    <p><i class="fa fa-instagram w3-hover-opacity w3-large"></i>Instagram:<a href="https://www.instagram.com/yourshadestons/"> @yourshadestons</a></p>
+                    <p><i class="fa fa-twitter w3-hover-opacity w3-large"></i>Twitter:<a href="https://twitter.com/Yourshades1"> @yourshades1</a></p>
+                    <p><i class="fa fa-spotify w3-hover-opacity w3-large"></i>Spotify:yourshadestons</p>
+                </div>
+            </div>
+        </footer>
+       
+    </body>
+</html>
