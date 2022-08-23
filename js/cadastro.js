@@ -1,13 +1,33 @@
+const form = document.getElementById("form");
+const username = document.getElementById("username");
+const CPF = document.getElementById("CPF");
+const password = document.getElementById("password");
+const passwordConfirmation = document.getElementById("password-confirmation");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  checkInputs();
+});
+
+function checkInputs() {
+  const usernameValue = username.value;
+  const CPFValue = CPF.value;
+  const passwordValue = password.value;
+  const passwordConfirmationValue = passwordConfirmation.value;
+
+  if (usernameValue === "") {
+    setErrorFor(username, "O nome de usuário é obrigatório.");
   } else {
     setSuccessFor(username);
   }
 
-  if (emailValue === "") {
-    setErrorFor(cpf, "O CPF é obrigatório.");
-  } else if (!checkCPF(cpfValue)) {
-    setErrorFor(cpf, "Por favor, insira um CPF válido.");
+  if (CPFValue === "") {
+    setErrorFor(CPF, "O email é obrigatório.");
+  } else if (!checkCPF(CPFValue)) {
+    setErrorFor(CPF, "Por favor, insira um email válido.");
   } else {
-    setSuccessFor(cpf);
+    setSuccessFor(CPF);
   }
 
   if (passwordValue === "") {
@@ -55,8 +75,8 @@ function setSuccessFor(input) {
   formControl.className = "form-control success";
 }
 
-function checkEmail(email) {
+function checkCPF(CPF) {
   return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-    email
+    CPF
   );
 }
