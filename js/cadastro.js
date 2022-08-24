@@ -1,4 +1,5 @@
 const form = document.getElementById("form");
+const form2 = document.getElementById("form2);
 const username = document.getElementById("username");
 const CPF = document.getElementById("CPF");
 const password = document.getElementById("password");
@@ -50,6 +51,8 @@ function checkInputs() {
 
   if (formIsValid) {
     console.log("O formulário está 100% válido!");
+    form.setAttribute("class", "lo");
+    form2.removeAttribute("class", "lo");
   }
 }
 
