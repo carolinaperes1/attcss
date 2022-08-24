@@ -10,7 +10,7 @@
       background-color: rgb(210, 153, 210) !important;
  }
 
- .myLink {
+ .myLink, .lo {
      display: none
  }
  #fundo{
