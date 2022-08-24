@@ -5,6 +5,10 @@ const password = document.getElementById("password");
 const passwordConfirmation = document.getElementById("password-confirmation");
 
 
+  form.addEventListener("submit", (e) => {
+  e.preventDefault();
+});
+
 function checkInputs() {
   const usernameValue = username.value;
   const CPFValue = CPF.value;
@@ -72,8 +76,3 @@ function setSuccessFor(input) {
   // Adicionar a classe de sucesso
   formControl.className = "form-control success";
 }
-
-  form.addEventListener("submit", (e) => {
-  checkInputs();
-  e.preventDefault();
-});
