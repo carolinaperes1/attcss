@@ -24,7 +24,7 @@ function checkInputs() {
 
   if (CPFValue === "") {
     setErrorFor(CPF, "O cpf é obrigatório.");
-  } else if (CPFValue.lengt<11 || CPFValue.length>11) {
+  } else if (CPFValue.lengt !== 11) {
     setErrorFor(CPF, "Por favor, insira um CPF válido.");
   } else {
     setSuccessFor(CPF);
