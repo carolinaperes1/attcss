@@ -22,11 +22,12 @@ function checkInputs() {
     setSuccessFor(username);
   }
 
+  
   if (CPFValue === "") {
-    setErrorFor(CPF, "O cpf é obrigatório.");
-  } else if (CPFValue.lengt !== 11) {
-    setErrorFor(CPF, "Por favor, insira um CPF válido.");
-  }  if(CPFValue.length === 11){
+    setErrorFor(CPF, "O CPF é obrigatório.");
+  } else if (CPFValue.length <11 || CPFValue.length >11) {
+    setErrorFor(CPF, "O CPF está errado");
+  } else {
     setSuccessFor(CPF);
   }
 
