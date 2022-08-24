@@ -1,5 +1,4 @@
 const form = document.getElementById("form");
-const form2 = document.getElementById("form2);
 const username = document.getElementById("username");
 const CPF = document.getElementById("CPF");
 const password = document.getElementById("password");
