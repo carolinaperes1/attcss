@@ -75,7 +75,6 @@ function setSuccessFor(input) {
 }
 
   form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
   checkInputs();
+  e.preventDefault();
 });
