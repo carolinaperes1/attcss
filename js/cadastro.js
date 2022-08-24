@@ -17,7 +17,7 @@ function checkInputs() {
   const passwordConfirmationValue = passwordConfirmation.value;
 
   if (usernameValue === "") {
-    setErrorFor(username, "O nome de usuário é obrigatório.");
+    setErrorFor(username, "O nome é obrigatório.");
   } else {
     setSuccessFor(username);
   }
@@ -25,7 +25,7 @@ function checkInputs() {
   if (CPFValue === "") {
     setErrorFor(CPF, "O email é obrigatório.");
   } else if (!checkCPF(CPFValue)) {
-    setErrorFor(CPF, "Por favor, insira um email válido.");
+    setErrorFor(CPF, "Por favor, insira um CPF válido.");
   } else {
     setSuccessFor(CPF);
   }
