@@ -4,11 +4,6 @@ const CPF = document.getElementById("CPF");
 const password = document.getElementById("password");
 const passwordConfirmation = document.getElementById("password-confirmation");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  checkInputs();
-});
 
 function checkInputs() {
   const usernameValue = username.value;
@@ -76,3 +71,8 @@ function setSuccessFor(input) {
   formControl.className = "form-control success";
 }
 
+  form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  checkInputs();
+});
