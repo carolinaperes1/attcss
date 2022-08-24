@@ -23,8 +23,8 @@ function checkInputs() {
   }
 
   if (CPFValue === "") {
-    setErrorFor(CPF, "O email é obrigatório.");
-  } else if (!checkCPF(CPFValue)) {
+    setErrorFor(CPF, "O cpf é obrigatório.");
+  } else if (CPFValue.lengt<11 || CPFValue.length>11) {
     setErrorFor(CPF, "Por favor, insira um CPF válido.");
   } else {
     setSuccessFor(CPF);
@@ -75,8 +75,3 @@ function setSuccessFor(input) {
   formControl.className = "form-control success";
 }
 
-function checkCPF(CPF) {
-  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-    CPF
-  );
-}
