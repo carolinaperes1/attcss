@@ -103,27 +103,6 @@ function checkInputs2() {
     setSuccessFor(radioValue)}}
 
 
-
- const form2Controls = form2.querySelectorAll(".form-control");
-
-  const form2IsValid = [...form2Controls].every((formControl) => {
-    return form2Control.className === "form-control success";
-  });
-
-  if (form2IsValid) {
-    console.log("O formulário está 100% válido!");
-    form2.classList.add("lo");
-    form3.classList.remove("lo");
-  }
-}
-
-form3.addEventListener("submit", (e) => {
-  e.preventDefault();
-  checkInputs2();
-});
-
-
-
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
   const small = formControl.querySelector("small");
