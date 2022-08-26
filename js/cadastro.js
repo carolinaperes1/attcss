@@ -1,13 +1,19 @@
 const form = document.getElementById("form");
+const form2 = document.getElementById("form2");
 const username = document.getElementById("username");
 const CPF = document.getElementById("CPF");
 const password = document.getElementById("password");
 const passwordConfirmation = document.getElementById("password-confirmation");
+const profession = document.getElementById("profession");
+const years = document.getElementById("years");
+const radio = document.getElementsByName("estado");
+const radioDiv = document.getElementsByClassName("radio");
+let radioValue = ""
 
 
   form.addEventListener("submit", (e) => {
   e.preventDefault();
-    checkInputs();
+  checkInputs();
 });
 
 function checkInputs() {
@@ -55,10 +61,39 @@ function checkInputs() {
 
   if (formIsValid) {
     console.log("O formulário está 100% válido!");
-    form.setAttribute("class", "lo");
-    form2.removeAttribute("class", "lo");
+    form.classList.add("lo");
+    form2.classList.remove("lo");
   }
 }
+
+form2.addEventListener("submit", (e) => {
+  e.preventDefault();
+  checkInputs2();
+});
+
+function checkInputs2() {
+  const professionValue = profession.value
+  const yearsValue = years.value
+  if (professionValue === "") {
+    setErrorFor(document.getElementById("RS"), "A profissão é obrigatória.");
+  } else {
+    setSuccessFor(profession);
+  }
+  if((radio[0].checked == false)&&(radio[1].checked == false)&&(radio[1].checked == false)){
+    setErrorFor(radioDiv, "Estado é obrigatório.");
+  }else{
+    if(radio[0].checked == true){
+      radioValue = "RS"
+    }
+    if(radio[1].checked == true){
+      radioValue = "SC"
+    }
+    if(radio[2].checked == true){
+      radioValue = "PR"
+    }
+    setSuccessFor(radioDiv)}}
+  
+
 
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
