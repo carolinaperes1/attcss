@@ -75,9 +75,18 @@ function checkInputs2() {
   const professionValue = profession.value
   const yearsValue = years.value
   if (professionValue === "") {
-    setErrorFor(document.getElementById("RS"), "A profissão é obrigatória.");
+    setErrorFor(profession, "A profissão é obrigatória.");
   } else {
     setSuccessFor(profession);
+  }
+
+
+  if (yearsValue === "") {
+    setErrorFor(years, "Obrigatório.");
+  } else if (yearsValue <0 || yearsValue>50) {
+    setErrorFor(years, "Inválido");
+  } else {
+    setSuccessFor(years);
   }
   if((radio[0].checked == false)&&(radio[1].checked == false)&&(radio[1].checked == false)){
     setErrorFor(radioDiv, "Estado é obrigatório.");
@@ -92,7 +101,15 @@ function checkInputs2() {
       radioValue = "PR"
     }
     setSuccessFor(radioDiv)}}
-  
+
+
+
+
+
+
+
+
+
 
 
 function setErrorFor(input, message) {
