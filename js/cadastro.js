@@ -100,15 +100,27 @@ function checkInputs2() {
     if(radio[0].checked == false && radio[1].checked == false && radio[2].checked == true){
       radioValue = "PR"
     }
-    setSuccessFor(radioDiv)}}
+    setSuccessFor(radioValue)}}
 
 
 
+ const form2Controls = form2.querySelectorAll(".form-control");
 
+  const form2IsValid = [...form2Controls].every((formControl) => {
+    return form2Control.className === "form-control success";
+  });
 
+  if (form2IsValid) {
+    console.log("O formulário está 100% válido!");
+    form2.classList.add("lo");
+    form3.classList.remove("lo");
+  }
+}
 
-
-
+form3.addEventListener("submit", (e) => {
+  e.preventDefault();
+  checkInputs2();
+});
 
 
 
