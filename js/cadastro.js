@@ -91,13 +91,13 @@ function checkInputs2() {
   if((radio[0].checked == false)&&(radio[1].checked == false)&&(radio[1].checked == false)){
     setErrorFor(radioDiv, "Estado é obrigatório.");
   }else{
-    if(radio[0].checked == true){
+    if(radio[0].checked == true && radio[1].checked == false && radio[2].checked == false){
       radioValue = "RS"
     }
-    if(radio[1].checked == true){
+    if(radio[0].checked == false && radio[1].checked == true && radio[2].checked == false){
       radioValue = "SC"
     }
-    if(radio[2].checked == true){
+    if(radio[0].checked == false && radio[1].checked == false && radio[2].checked == true){
       radioValue = "PR"
     }
     setSuccessFor(radioDiv)}}
