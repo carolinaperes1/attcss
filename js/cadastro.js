@@ -12,12 +12,12 @@ let radioValue = '';
 
 form.addEventListener('submit', e => {
   e.preventDefault();
-  checkInputs();
+ 
   const CPFValue = CPF.value;
   const usernameValue = username.value;
   const passwordValue = password.value;
   const passwordConfirmationValue = passwordConfirmation.value;
-  
+   checkInputs();
 });
 
 function checkInputs() {
@@ -67,9 +67,10 @@ function checkInputs() {
 
 form2.addEventListener('submit', e => {
   // e.preventDefault();
-  checkInputs2();
+
   const professionValue = profession.value;
   const yearsValue = years.value;
+    checkInputs2();
 });
 
 function checkInputs2() {
