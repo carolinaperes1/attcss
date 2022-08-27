@@ -79,7 +79,7 @@
 
         <button type="submit">Enviar</button>
       </form>
-      <form id="form2" class="form lo">
+      <form name="form2" id="form2" class="form lo" method="GET" action="index.html">
         <div class="form-control">
           <label for="profession">Sua profissão:</label>
           <input type="text" id="profession" placeholder="Digite sua profissão" />
@@ -90,11 +90,11 @@
         <div class="form-control">
           <div class="radio">
             <label>Seu estado:</label>
-            <input type="radio" id="rs" name="estado">
+            <input type="radio" id="rs" name="estado" required>
             <label for="rs">RS(Rio Grande do Sul)</label>
-            <input type="radio" id="sc" name="estado">
+            <input type="radio" id="sc" name="estado" required>
             <label for="sc">SC(Santa Catarina)</label>
-            <input type="radio" id="pr" name="estado">
+            <input type="radio" id="pr" name="estado" required>
             <label for="pr">PR(Paraná)</label>
           </div>
           <i class="fas fa-exclamation-circle"></i>
@@ -108,7 +108,7 @@
           <i class="fas fa-check-circle"></i>
           <small>Mensagem de erro</small>
         </div>
-        <button type="submit">Enviar</button>
+        <button name="enviar" type="submit">Enviar</button>
       </form>
     </div>
 
