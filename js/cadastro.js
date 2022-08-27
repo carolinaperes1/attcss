@@ -24,6 +24,7 @@ function checkInputs() {
   if (usernameValue === '') {
     setErrorFor(username, 'O nome é obrigatório.');
   } else {
+    usernameValue=username.value;
     setSuccessFor(username);
   }
 
@@ -32,6 +33,7 @@ function checkInputs() {
   } else if (CPFValue.length < 11 || CPFValue.length > 11) {
     setErrorFor(CPF, 'O CPF está errado');
   } else {
+    CPFValue=CPF.value;
     setSuccessFor(CPF);
   }
 
@@ -40,6 +42,7 @@ function checkInputs() {
   } else if (passwordValue.length < 8) {
     setErrorFor(password, 'A senha precisa ter no mínimo 8 caracteres.');
   } else {
+    passwordValue=password.value;
     setSuccessFor(password);
   }
 
@@ -75,6 +78,7 @@ function checkInputs2() {
   if (professionValue === '') {
     setErrorFor(profession, 'A profissão é obrigatória.');
   } else {
+    professionValue=profession.value;
     setSuccessFor(profession);
   }
 
@@ -83,6 +87,7 @@ function checkInputs2() {
   } else if (yearsValue < 0 || yearsValue > 50) {
     setErrorFor(years, 'Inválido');
   } else {
+    yearsValue=years.value;
     setSuccessFor(years);
   }
   if (
