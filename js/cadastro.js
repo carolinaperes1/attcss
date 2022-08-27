@@ -12,15 +12,14 @@ let radioValue = '';
 
 form.addEventListener('submit', e => {
   e.preventDefault();
- 
-  const CPFValue = CPF.value;
-  const usernameValue = username.value;
-  const passwordValue = password.value;
-  const passwordConfirmationValue = passwordConfirmation.value;
-   checkInputs();
+  checkInputs();
 });
 
 function checkInputs() {
+  const usernameValue = username.value;
+  const CPFValue = CPF.value;
+  const passwordValue = password.value;
+  const passwordConfirmationValue = passwordConfirmation.value;
 
   if (usernameValue === '') {
     setErrorFor(username, 'O nome é obrigatório.');
@@ -67,14 +66,12 @@ function checkInputs() {
 
 form2.addEventListener('submit', e => {
   // e.preventDefault();
-
-  const professionValue = profession.value;
-  const yearsValue = years.value;
-    checkInputs2();
+  checkInputs2();
 });
 
 function checkInputs2() {
-  
+  const professionValue = profession.value;
+  const yearsValue = years.value;
   if (professionValue === '') {
     setErrorFor(profession, 'A profissão é obrigatória.');
   } else {
