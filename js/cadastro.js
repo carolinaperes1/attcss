@@ -88,7 +88,7 @@ function checkInputs2() {
   } else {
     setSuccessFor(years);
   }
-  if((radio[0].checked == false)&&(radio[1].checked == false)&&(radio[1].checked == false)){
+  if((radio[0].checked == false) || (radio[1].checked == false) || (radio[2].checked == false)){
     setErrorFor(radioDiv, "Estado é obrigatório.");
   }else{
     if(radio[0].checked == true){
