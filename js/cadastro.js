@@ -13,18 +13,18 @@ let radioValue = '';
 form.addEventListener('submit', e => {
   e.preventDefault();
   checkInputs();
+  const CPFValue = CPF.value;
+  const usernameValue = username.value;
+  const passwordValue = password.value;
+  const passwordConfirmationValue = passwordConfirmation.value;
+  
 });
 
 function checkInputs() {
-  const usernameValue = username.value;
-  const CPFValue = CPF.value;
-  const passwordValue = password.value;
-  const passwordConfirmationValue = passwordConfirmation.value;
 
   if (usernameValue === '') {
     setErrorFor(username, 'O nome é obrigatório.');
   } else {
-    usernameValue=username.value;
     setSuccessFor(username);
   }
 
@@ -33,7 +33,6 @@ function checkInputs() {
   } else if (CPFValue.length < 11 || CPFValue.length > 11) {
     setErrorFor(CPF, 'O CPF está errado');
   } else {
-    CPFValue=CPF.value;
     setSuccessFor(CPF);
   }
 
@@ -42,7 +41,6 @@ function checkInputs() {
   } else if (passwordValue.length < 8) {
     setErrorFor(password, 'A senha precisa ter no mínimo 8 caracteres.');
   } else {
-    passwordValue=password.value;
     setSuccessFor(password);
   }
 
@@ -70,15 +68,15 @@ function checkInputs() {
 form2.addEventListener('submit', e => {
   // e.preventDefault();
   checkInputs2();
+  const professionValue = profession.value;
+  const yearsValue = years.value;
 });
 
 function checkInputs2() {
-  const professionValue = profession.value;
-  const yearsValue = years.value;
+  
   if (professionValue === '') {
     setErrorFor(profession, 'A profissão é obrigatória.');
   } else {
-    professionValue=profession.value;
     setSuccessFor(profession);
   }
 
@@ -87,7 +85,6 @@ function checkInputs2() {
   } else if (yearsValue < 0 || yearsValue > 50) {
     setErrorFor(years, 'Inválido');
   } else {
-    yearsValue=years.value;
     setSuccessFor(years);
   }
   if (
